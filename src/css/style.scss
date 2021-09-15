@@ -1,0 +1,35 @@
+@import '../scss/reset';
+@import '../scss/media';
+// @import '../scss/header';
+// @import '../scss/footer';
+@import '../scss/main';
+// @import '../scss/keyboard';
+
+body,
+html {
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+}
+
+body {
+  // background: url('../img/movie-bgc.jpg') no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center center;
+  background-image: url("../img/overlay.png");  
+  transition: background-image 1s ease-in-out;
+}
+
+.wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+  // max-width: 1280px;
+  margin: 0 auto;
+  background-color: rgba(0,0,0,.3);
+}
